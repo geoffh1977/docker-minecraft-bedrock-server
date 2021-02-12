@@ -1,0 +1,33 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: cimg/base:2021.02
+    
+    steps:
+      - checkout
+
+      - run:
+          name: Check Version Details
+          command: ./scripts/check_version.sh
+      
+      - run:
+          name: Execute Docker Hub Build
+          command: curl --data build=true -X POST https://hub.docker.com/api/build/v1/source/120db98b-3446-4c54-a42b-6c7c08d8cd24/trigger/d7ac2708-7d8b-4523-ae5c-f9218697d788/call/
+          when: on_success
+
+# workflows:
+#   version: 2
+
+#   nightly:
+#     triggers:
+#       - schedule:
+#           cron: "0 0 * * *"
+#           filters:
+#             branches:
+#               only:
+#                 - main
+
+#     jobs:
+#       - build
