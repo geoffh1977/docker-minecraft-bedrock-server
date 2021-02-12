@@ -1,3 +1,4 @@
 .circleci/
 hooks/
 scripts/
+images/
