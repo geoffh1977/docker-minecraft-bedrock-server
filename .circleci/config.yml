@@ -16,6 +16,7 @@ jobs:
           name: Execute Docker Hub Build (if required)
           command: |
             if [ "${REBUILD_REQUIRED}" == "true"]; then
+              echo "Rebuild Required! Executing..."
               curl --data build=true -X POST https://hub.docker.com/api/build/v1/source/120db98b-3446-4c54-a42b-6c7c08d8cd24/trigger/d7ac2708-7d8b-4523-ae5c-f9218697d788/call/
             else
               echo "No Rebuild Required."
