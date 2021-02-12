@@ -22,17 +22,17 @@ jobs:
               echo "No Rebuild Required."
             fi
 
-# workflows:
-#   version: 2
+workflows:
+  version: 2
 
-#   nightly:
-#     triggers:
-#       - schedule:
-#           cron: "0 0 * * *"
-#           filters:
-#             branches:
-#               only:
-#                 - main
+  nightly:
+    triggers:
+      - schedule:
+          cron: "0 0 * * *"
+          filters:
+            branches:
+              only:
+                - main
 
-#     jobs:
-#       - build
+    jobs:
+      - build
