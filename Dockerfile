@@ -24,7 +24,7 @@ RUN mkdir config worlds && \
   ln -s /bedrock-server/config/whitelist.json .
 
 RUN useradd --create-home --shell /bin/bash minecraft && \
-  chown minecraft:minecraft -R /bedrock-server /bedrock-server/worlds
+  chown minecraft:minecraft -R /bedrock-server
 
 VOLUME ["/bedrock-server/config", "/bedrock-server/worlds"]
 
