@@ -1,7 +1,4 @@
-#!/usr/bin/env bash
-set -o nounset
-set -o errexit
-set -o pipefail
+#!/bin/bash -xe
 
 # Get Latests Docker Hub Tag
 LATEST_TAG=$(curl -s https://hub.docker.com/v2/repositories/geoffh1977/minecraft-bedrock-server/tags | jq -r '.results[].name' | grep -v "[a-z]" | sort -rn | head -n1)
