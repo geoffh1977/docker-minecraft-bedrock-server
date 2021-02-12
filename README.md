@@ -1,6 +1,6 @@
 # Minecraft Bedrock Server Image #
 
-![Image](https://github.com/geoffh1977/docker-minecraft-bedrock-server/blob/main/image/minecraft.jpg?raw=true)
+![Image](https://github.com/geoffh1977/docker-minecraft-bedrock-server/raw/main/images/minecraft.jpg)
 
 ![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/geoffh1977/minecraft-bedrock-server?style=plastic) ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/geoffh1977/minecraft-bedrock-server?style=plastic) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/geoffh1977/minecraft-bedrock-server/latest?style=plastic) ![Docker Pulls](https://img.shields.io/docker/pulls/geoffh1977/minecraft-bedrock-server?style=plastic) ![Circle CI Status](https://img.shields.io/circleci/build/github/geoffh1977/docker-minecraft-bedrock-server/main?label=cirecleci&style=plastic&token=a61a99b1c491ddd861ece08fcd224a6298b8650d)
 
