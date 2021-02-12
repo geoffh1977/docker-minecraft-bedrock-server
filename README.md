@@ -1,8 +1,11 @@
 # Minecraft Bedrock Server Image #
 
-![Image](https://github.com/geoffh1977/docker-minecraft-bedrock-server/raw/main/images/minecraft.jpg)
+<p align="center">
+<img src="https://github.com/geoffh1977/docker-minecraft-bedrock-server/raw/main/images/minecraft.jpg" width="50%" height="50%" text-align="center">
+</p>
 
 ![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/geoffh1977/minecraft-bedrock-server?style=plastic) ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/geoffh1977/minecraft-bedrock-server?style=plastic) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/geoffh1977/minecraft-bedrock-server/latest?style=plastic) ![Docker Pulls](https://img.shields.io/docker/pulls/geoffh1977/minecraft-bedrock-server?style=plastic) ![Circle CI Status](https://img.shields.io/circleci/build/github/geoffh1977/docker-minecraft-bedrock-server/main?label=cirecleci&style=plastic&token=a61a99b1c491ddd861ece08fcd224a6298b8650d)
+
 
 ## Description ##
 This docker image provides the latest version of the Minecraft Bedrock Server inside a docker container image. The Minecraft Bedrock build is checked on a nightly basis and the image will be automatically be updated as new versions are released.
