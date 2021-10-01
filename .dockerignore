@@ -1,1 +1,6 @@
 scripts/
+.editorconfig
+.gitignore
+Makefile
+project.yaml
+README.md
