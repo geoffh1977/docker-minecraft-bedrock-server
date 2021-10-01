@@ -9,7 +9,7 @@
 
 ## Description ##
 
-This docker image provides the latest version of the Minecraft Bedrock Server inside a docker container image. The Minecraft Bedrock build is checked on a nightly basis and the image will be automatically be updated as new versions are released.
+This docker image provides the latest version of the Minecraft Bedrock Server inside a docker container image. The Minecraft Bedrock build is checked via the website and the image will be automatically updated as new versions are released.
 
 ## Quick Start ##
 
