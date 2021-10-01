@@ -1,4 +1,4 @@
-#!/bin/bash -xe
+#!/bin/bash -e
 
 # Get Latests Docker Hub Tag
 LATEST_TAG=$(curl -s https://hub.docker.com/v2/repositories/geoffh1977/minecraft-bedrock-server/tags | jq -r '.results[].name' | grep -v "[a-z]" | sort -rn | head -n1)
@@ -16,9 +16,10 @@ echo
 if [ "${LATEST_TAG}" == "${VERSION}" ]
 then
   echo "Versions Match. No Rebuild Is Required."
-  echo "export REBUILD_REQUIRED=false" >> "${BASH_ENV}"
 else
   echo "Version MisMatch. A Rebuild Is Required."
-  echo "export REBUILD_REQUIRED=true" >> "${BASH_ENV}"
+  
+  # shellcheck disable=SC1091
+  source ./scripts/build_image.sh
 fi
 echo
