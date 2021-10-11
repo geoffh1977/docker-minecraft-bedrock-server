@@ -4,7 +4,7 @@ FROM debian:buster
 
 LABEL maintainer="Geoffrey Harrison <geoffh1977@gmail.com>"
 
-ARG VERSION
+ARG VERSION=1.17.34.02
 
 # hadolint ignore=DL3008
 RUN export DEBIAN_FRONTEND=noninteractive && \
